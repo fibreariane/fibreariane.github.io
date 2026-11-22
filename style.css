@@ -1,0 +1,89 @@
+/* Pages publiques des applis GAIA. Couleurs d'Hestia : neutres chauds, terre cuite. */
+:root {
+    --fond: #FFF8F0;
+    --carte: #FFFFFF;
+    --texte: #231A16;
+    --doux: #6B5B53;
+    --accent: #B5523B;
+    --trait: #EADDD3;
+    --encart: #FBEEE4;
+    color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --fond: #1E1A17;
+        --carte: #282220;
+        --texte: #EDE0DA;
+        --doux: #BFAFA6;
+        --accent: #FFB4A1;
+        --trait: #3D3431;
+        --encart: #342A26;
+        color-scheme: dark;
+    }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: var(--fond);
+    color: var(--texte);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2rem 16px 4rem;
+}
+
+header.appli {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+}
+header.appli .pastille {
+    width: 2.5rem; height: 2.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--fond);
+    display: grid; place-items: center;
+    font-weight: 700; font-size: 1.2rem;
+}
+header.appli span { color: var(--doux); }
+
+h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 .25rem; }
+h2 { font-size: 1.25rem; margin: 2.25rem 0 .5rem; }
+p.date { color: var(--doux); margin-top: 0; }
+
+a { color: var(--accent); }
+
+ul, ol { padding-left: 1.25rem; }
+li { margin: .3rem 0; }
+
+.encart {
+    background: var(--encart);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+}
+.encart p { margin: .25rem 0; }
+
+.cartes { list-style: none; padding: 0; }
+.cartes li {
+    background: var(--carte);
+    border: 1px solid var(--trait);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin: .75rem 0;
+}
+.cartes li strong { display: block; }
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--trait);
+    color: var(--doux);
+    font-size: .9rem;
+}
