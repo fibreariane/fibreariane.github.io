@@ -18,7 +18,8 @@ et les dépôts des applis restent privés. N'y mettre que ce qui peut être lu 
 
 ## Règles
 
-- Adresse de contact affichée : l'adresse Gmail de l'utilisatrice (son choix, 22 novembre 2026). La changer
+- Adresse de contact affichée : l'adresse Gmail réservée aux applis (« …app@gmail.com », son choix,
+  22 novembre 2026). La changer
   partout d'un coup si elle crée une adresse à part.
 - Une page par dossier (`appli/page/index.html`) pour des adresses sans `.html`.
 - Quand une appli change ce qu'elle stocke ou envoie (nouveau service, nouvelle autorisation Android), mettre sa
